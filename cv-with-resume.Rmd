@@ -90,7 +90,7 @@ tribble(
   2021, "ContrApption: interactive JavaScript widgets for visualizing RNA-Seq like data from a single function call in R",
     "https://github.com/omics-kitchen/ContrApption"
 ) %>% 
-  brief_entries(glue::glue("{Type}"), Year, Desc)
+  detailed_entries(glue::glue("{Type}"), Year, Desc)
 ```
 
 # Publications
@@ -116,10 +116,23 @@ tribble(
   "TBD", "miRNAs in canine mitral value disorders", "",
   "TBD", "An atlas of miRNAs by tissue type", "",
   "TBD", "ContrApption: interactive visualization of RNA-Seq style datasets from a single function call","",
+  "TBD", "tRNA-derived species pre and post cardiac bypass surgery", "",
+  "TBD", "Molecular profiling of heart failure subtypes","",
 ) %>%
   detailed_entries(Desc, glue::glue("{Year}"), Note)
 ```
 
+# Extra-professional work
+
+```{R}
+
+tribble(
+  ~Year, ~Desc, ~Note,
+  2021, "National survivor financial security policy map and scorecard",
+    "The #1 obstacle to a survivor’s long-term safety is financial insecurity. This means that we cannot disrupt the cycle of intimate partner violence in the U.S. until we move beyond the current focus on crisis response and prioritize policies that support financial security and long-term safety for survivors and their families. That is, we must prioritize policies that support survivor wealth. https://mapandscorecard.freefrom.org/",
+) %>%
+  detailed_entries(Desc, glue::glue("{Year}"), Note)
+```
 # Pre-academic work
 
 ## Antibody Technician - New England Peptide (Now 'Vivitide') 
