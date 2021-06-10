@@ -119,7 +119,7 @@ tribble(
   "TBD", "tRNA-derived species pre and post cardiac bypass surgery", "",
   "TBD", "Molecular profiling of heart failure subtypes","",
 ) %>%
-  detailed_entries(Desc, glue::glue("{Year}"), Note)
+  brief_entries(Desc, glue::glue("{Year}"), Note)
 ```
 
 # Extra-professional work
@@ -133,42 +133,81 @@ tribble(
 ) %>%
   detailed_entries(Desc, glue::glue("{Year}"), Note)
 ```
+
 # Pre-academic work
+##
+##
+##
+##
+##
+##
+## Antibody Technician - New England Peptide
 
-## Antibody Technician - New England Peptide (Now 'Vivitide') 
+                              (Now 'Vivitide') 
+                            Sept. ‘15 - Sept.’17
 
-                              Sept. ‘15 - Sept.’17
+```{R}
 
-- Ran day-to-day operations of antibody production lab as sole technician
-- Self-taught Python programming to automate bioinformatics tasks, saving weeks of effort and dozens of errors
-- Studied and practiced antigen design under an industry leader
+tribble(
+  ~Year, ~Desc,
+    ".", "Ran day-to-day operations of antibody production lab as sole technician",
+    ".", "Self-taught Python programming to automate bioinformatics tasks, saving weeks of effort and dozens of errors",
+    ".", "Studied and practiced antigen design under an industry leader",
+) %>%
+  brief_entries(Desc, glue::glue("{Year}"))
+```
 
+##
 ## Chemical Operator, Vinegar Plant - Pilgrim Foods
 
-                              Mar. ‘15 - Sept. ’15
+                            Mar. ‘15 - Sept. ’15
 
-- Inoculated, monitored, and maintained live cultures of Acetobacter for fermentation of ethanol to acetic acid
-- Redefined instrument calibration procedure by observing logarithmic trends in data previously modeled as linear
-- Formulated batches of mash to alcohol, acidity, stock, and water specifications
+```{R}
 
-## Asst. Manager, Peer Counselor - The Bridge of Central Mass 
-## (Now 'Open Sky Community Services')
+tribble(
+  ~Year, ~Desc,
+    ".", "Inoculated, monitored, and maintained live cultures of Acetobacter for fermentation of ethanol to acetic acid",
+    ".", "Redefined instrument calibration procedure by observing logarithmic trends in data previously modeled as linear",
+    ".", "Formulated batches of mash to alcohol, acidity, stock, and water specifications",
+) %>%
+  brief_entries(Desc, glue::glue("{Year}"))
+```
 
-                              Nov. ‘13 – Mar. ’15
+##
+## Asst. Manager, Peer Counselor - The Bridge of Central Mass
 
-- Counseled individuals aged 18-25 in their recovery from mental illness and trauma
-- Provided quality assurance for medication administration and financial tracking
-- Supervised nine employees during shifts and on call from home for crisis management
+                        (Now 'Open Sky Community Services')
+                            Nov. ‘13 – Mar. ’15
 
+```{R}
+
+tribble(
+  ~Year, ~Desc,
+    ".", "Counseled individuals aged 18-25 in their recovery from mental illness and trauma",
+    ".", "Provided quality assurance for medication administration and financial tracking",
+    ".", "Supervised nine employees during shifts and on call from home for crisis management",
+) %>%
+  brief_entries(Desc, glue::glue("{Year}"))
+```
+
+
+##
 ## Firefighter/EMT - Orange Fire Rescue EMS
 
-                              Jun. ‘08 – Sept. ‘14
+                            Jun. ‘08 – Sept. ‘14
 
-- Engaged in fire/rescue activities, structural and wildland firefighting, search operations, and trauma management
-- Responded to medical emergencies, performed CPR/Basic life support, and administered medication
-- Participated in search and rescue operations and trainings, including ice rescue training and boat operations
+```{R}
 
+tribble(
+  ~Year, ~Desc,
+    ".", "Engaged in fire/rescue activities, structural and wildland firefighting, search operations, and trauma management",
+    ".", "Responded to medical     emergencies, performed CPR/Basic life support, and administered medication",
+    ".", "Participated in search and rescue operations and trainings, including ice rescue training and boat operations",
+) %>%
+  brief_entries(Desc, glue::glue("{Year}"))
+```
 
+##
 # Media
 
 ```{r}
