@@ -95,7 +95,7 @@ tribble(
 
 # Publications
 
-## Accepted
+## Published 
 
 ```{R}
 
