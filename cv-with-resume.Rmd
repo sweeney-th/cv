@@ -46,9 +46,7 @@ tribble(
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
-# Teaching & Assistantships
-
-## Instructor
+# Teaching
 
 ```{r}
 
@@ -56,27 +54,8 @@ tribble(
   ~Year, ~Class, ~ Where,
   2020, "Bioinformatics Methods I (spring)", "Northeastern University",
   2020, "Bioinformatics Methods I (fall)", "Northeastern University",
-  2021, "Bioinformatics Methods I (spring)", "Northeastern University"  
-) %>% 
-  detailed_entries(Class, Year, Where)
-```
-
-## Teaching Assistant
-
-
-
-```{r}
-
-tribble(
-  ~Year, ~Class, ~ Where,
-  2018, "Bioinformatics programming",
-    "Northeastern University College of Science",
-  
-  2018, "Collecting, storing, and retrieving data",
-    "Northeastern University College of Computer & Information Science",
-  
-  2018, "Introduction to data science and machine learning (spring)",
-    "Northeastern University College of Computer & Information Science"
+  2021, "Bioinformatics Methods I (spring)", "Northeastern University",
+  2021, "Bioinformatics Methods I (fall)", "Northeastern University"
 ) %>% 
   detailed_entries(Class, Year, Where)
 ```
@@ -87,22 +66,44 @@ tribble(
 tribble(
   ~Year, ~Type, ~Desc, 
   2020, "An interactive Bayesian Ttool for SARS-CoV2-Antibody test interpretation", "Manuscript supplement, https://covid.omics.kitchen/",
-  2021, "ContrApption: interactive JavaScript widgets for visualizing RNA-Seq like data from a single function call in R",
-    "https://github.com/omics-kitchen/ContrApption"
+  2020, "ContrApption: interactive visualization of RNA-Seq style datasets from a single function call", "(beta) https://github.com/omics-kitchen/ContrApption",
 ) %>% 
-  detailed_entries(glue::glue("{Type}"), Year, Desc)
+  brief_entries(glue::glue("{Type}"), Year, Desc)
 ```
 
 # Publications
 
-## Published 
+## Published
 
 ```{R}
 
 tribble(
   ~Year, ~Desc, ~Note,
-  2021, "Evaluation of serological lateral flow assays for severe acute respiratory syndrome coronavirus-2",
+  "2021", "Evaluation of serological lateral flow assays for severe acute respiratory syndrome coronavirus-2",
     "Supplement: https://covid.omics.kitchen/"
+) %>%
+  detailed_entries(Desc, glue::glue("{Year}"), Note)
+```
+
+## In Revision
+
+```{R}
+
+tribble(
+  ~Year, ~Desc, ~Note,
+  "2021", "Distinct stress-dependent signatures of cellular and extracellular tRNA-derived small RNAs (tDRs)", "https://www.biorxiv.org/content/10.1101/2021.09.03.458085v1",
+  "2021", "An Examination of Small RNA Expression in Multiple Tissues and Their Detection in Biofluids", "",
+) %>%
+  detailed_entries(Desc, glue::glue("{Year}"), Note)
+```
+
+## Submitted
+
+```{R}
+
+tribble(
+  ~Year, ~Desc, ~Note,
+  "TBD", "Elevation of Neuronal Injury Markers in Patients with Neurologic Sequelae after Hospitalization for SARS-CoV-2 Infection", ""
 ) %>%
   detailed_entries(Desc, glue::glue("{Year}"), Note)
 ```
@@ -114,24 +115,21 @@ tribble(
 tribble(
   ~Year, ~Desc, ~Note,
   "TBD", "miRNAs in canine mitral value disorders", "",
-  "TBD", "An atlas of miRNAs by tissue type", "",
+  "TBD", "Increased levels of the synaptic proteins PSD-95, SNAP-25, and Neurogranin in the cerebrospinal fluid of patients with Alzheimer’s Disease", "",
   "TBD", "ContrApption: interactive visualization of RNA-Seq style datasets from a single function call","",
-  "TBD", "tRNA-derived species pre and post cardiac bypass surgery", "",
-  "TBD", "Molecular profiling of heart failure subtypes","",
 ) %>%
-  brief_entries(Desc, glue::glue("{Year}"), Note)
+  detailed_entries(Desc, glue::glue("{Year}"), Note)
 ```
 
-# Extra-professional work
+# Media
 
-```{R}
+```{r}
 
 tribble(
   ~Year, ~Desc, ~Note,
-  2021, "National survivor financial security policy map and scorecard",
-    "The #1 obstacle to a survivor’s long-term safety is financial insecurity. This means that we cannot disrupt the cycle of intimate partner violence in the U.S. until we move beyond the current focus on crisis response and prioritize policies that support financial security and long-term safety for survivors and their families. That is, we must prioritize policies that support survivor wealth. https://mapandscorecard.freefrom.org/",
-) %>%
-  detailed_entries(Desc, glue::glue("{Year}"), Note)
+  2020, "COVID-19 LFA Research", "https://www.wcvb.com/article/boston-researchers-assess-performance-of-covid-19-antibody-tests/33625088"
+) %>% 
+  brief_entries(Desc, Year, Note)
 ```
 
 # Pre-academic work
@@ -207,14 +205,4 @@ tribble(
   brief_entries(Desc, glue::glue("{Year}"))
 ```
 
-##
-# Media
 
-```{r}
-
-tribble(
-  ~Year, ~Desc, ~Note,
-  2020, "COVID-19 LFA Research", "https://www.wcvb.com/article/boston-researchers-assess-performance-of-covid-19-antibody-tests/33625088"
-) %>% 
-  brief_entries(Desc, Year, Note)
-```

@@ -65,20 +65,44 @@ tribble(
 tribble(
   ~Year, ~Type, ~Desc, 
   2020, "An interactive Bayesian Ttool for SARS-CoV2-Antibody test interpretation", "Manuscript supplement, https://covid.omics.kitchen/",
+  2020, "ContrApption: interactive visualization of RNA-Seq style datasets from a single function call", "(beta) https://github.com/omics-kitchen/ContrApption",
 ) %>% 
   brief_entries(glue::glue("{Type}"), Year, Desc)
 ```
 
 # Publications
 
-## Accepted
+## Published
 
 ```{R}
 
 tribble(
   ~Year, ~Desc, ~Note,
-  "TBD", "Evaluation of serological lateral flow assays for severe acute respiratory syndrome coronavirus-2",
+  "2021", "Evaluation of serological lateral flow assays for severe acute respiratory syndrome coronavirus-2",
     "Supplement: https://covid.omics.kitchen/"
+) %>%
+  detailed_entries(Desc, glue::glue("{Year}"), Note)
+```
+
+## In Revision
+
+```{R}
+
+tribble(
+  ~Year, ~Desc, ~Note,
+  "2021", "Distinct stress-dependent signatures of cellular and extracellular tRNA-derived small RNAs (tDRs)", "https://www.biorxiv.org/content/10.1101/2021.09.03.458085v1",
+  "2021", "An Examination of Small RNA Expression in Multiple Tissues and Their Detection in Biofluids", "",
+) %>%
+  detailed_entries(Desc, glue::glue("{Year}"), Note)
+```
+
+## Submitted
+
+```{R}
+
+tribble(
+  ~Year, ~Desc, ~Note,
+  "TBD", "Elevation of Neuronal Injury Markers in Patients with Neurologic Sequelae after Hospitalization for SARS-CoV-2 Infection", ""
 ) %>%
   detailed_entries(Desc, glue::glue("{Year}"), Note)
 ```
@@ -90,7 +114,7 @@ tribble(
 tribble(
   ~Year, ~Desc, ~Note,
   "TBD", "miRNAs in canine mitral value disorders", "",
-  "TBD", "An atlas of miRNAs by tissue type", "",
+  "TBD", "Increased levels of the synaptic proteins PSD-95, SNAP-25, and Neurogranin in the cerebrospinal fluid of patients with Alzheimer’s Disease", "",
   "TBD", "ContrApption: interactive visualization of RNA-Seq style datasets from a single function call","",
 ) %>%
   detailed_entries(Desc, glue::glue("{Year}"), Note)
