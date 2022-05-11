@@ -4,10 +4,10 @@ name: Thadryan
 surname: Sweeney
 position: "Technologist, Instructor"
 phone: +978 696 6946
-www: "sweeney-th.github.io"
+www: "thadryanjs.github.io"
 email: "thadryan@protonmail.com"
 twitter: ThadryanJS
-github: sweeney-th
+github: thadryanjs
 linkedin: "thadryan-sweeney-10b938a"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::moderncv
@@ -27,7 +27,7 @@ I am a Computational Biologist and Scientific Software Developer interested in a
 
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Research Technologist", "2020", "Mass General/Harvard Medical School", "Boston, MA",
+  "Research Technologist", "2020-", "Mass General/Harvard Medical School", "Boston, MA",
   "Bioinformatics & Data Science Contractor", "2018", "bluebird bio", "Cambridge, MA"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
@@ -39,9 +39,10 @@ tribble(
 
 tribble(
   ~Degree, ~Year, ~Institution, ~Where,
-  "Associate of Arts",   "2011", "Greenfield Community College",   "Greenfield, MA",
+  "Master of Science",   "2019", "Northeastern University",        "Boston, MA",
   "Bachelor of Science", "2013", "American International College", "Springfield, MA",
-  "Master of Science",   "2019", "Northeastern University",        "Boston, MA"
+  "Associate of Arts",   "2011", "Greenfield Community College",   "Greenfield, MA"
+
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
@@ -52,10 +53,11 @@ tribble(
 
 tribble(
   ~Year, ~Class, ~ Where,
-  2020, "Bioinformatics Methods I (spring)", "Northeastern University",
-  2020, "Bioinformatics Methods I (fall)", "Northeastern University",
+  2022, "Bioinformatics Methods I (spring)", "Northeastern University",
+  2021, "Bioinformatics Methods I (fall)", "Northeastern University",
   2021, "Bioinformatics Methods I (spring)", "Northeastern University",
-  2021, "Bioinformatics Methods I (fall)", "Northeastern University"
+  2020, "Bioinformatics Methods I (fall)", "Northeastern University",
+  2020, "Bioinformatics Methods I (spring)", "Northeastern University",
 ) %>% 
   detailed_entries(Class, Year, Where)
 ```
@@ -79,10 +81,29 @@ tribble(
 
 tribble(
   ~Year, ~Desc, ~Note,
+  
+  "2022", "Increased levels of the synaptic proteins PSD-95, SNAP-25, and neurogranin in the cerebrospinal fluid of patients with Alzheimer’s disease", "Alzheimer's Research & Therapy",
+
+  "2022", "Distinct stress-dependent signatures of cellular and extracellular tRNA-derived small RNAs (tDRs)", "Advanced Science",
+   
+  "2022", "A novel tissue atlas and online tool for the interrogation of small RNA expression in human tissues and biofluids", "Frontiers in Cell and Developmental Biology, supplement: https://data.omics.kitchen/miRNAatlas/",
+  
   "2021", "Evaluation of serological lateral flow assays for severe acute respiratory syndrome coronavirus-2",
-    "Supplement: https://covid.omics.kitchen/"
+  "BMC Infectious Diseases, supplement: https://covid.omics.kitchen/",
+  
 ) %>%
   detailed_entries(Desc, glue::glue("{Year}"), Note)
+```
+
+<!-- ## Accepted -->
+
+```{R}
+
+# tribble(
+#   ~Year, ~Desc, ~Note,
+#   "2021", "A novel tissue atlas and online tool for the interrogation of small RNA expression in human tissues and biofluids", "https://www.frontiersin.org/articles/10.3389/fcell.2022.804164/abstract",
+# ) %>%
+#   detailed_entries(Desc, glue::glue("{Year}"), Note)
 ```
 
 ## In Revision
@@ -91,8 +112,7 @@ tribble(
 
 tribble(
   ~Year, ~Desc, ~Note,
-  "2021", "Distinct stress-dependent signatures of cellular and extracellular tRNA-derived small RNAs (tDRs)", "https://www.biorxiv.org/content/10.1101/2021.09.03.458085v1",
-  "2021", "An Examination of Small RNA Expression in Multiple Tissues and Their Detection in Biofluids", "",
+  "2022", "Elevation of Neuronal Injury Markers in Patients with Neurologic Sequelae after Hospitalization for SARS-CoV-2 Infection", ""
 ) %>%
   detailed_entries(Desc, glue::glue("{Year}"), Note)
 ```
@@ -103,7 +123,7 @@ tribble(
 
 tribble(
   ~Year, ~Desc, ~Note,
-  "TBD", "Elevation of Neuronal Injury Markers in Patients with Neurologic Sequelae after Hospitalization for SARS-CoV-2 Infection", ""
+  "2022", "Plasma biomarkers for diagnosis of Alzheimer’s disease and prediction of cognitive decline in individuals with mild cognitive impairment", ""
 ) %>%
   detailed_entries(Desc, glue::glue("{Year}"), Note)
 ```
@@ -115,8 +135,24 @@ tribble(
 tribble(
   ~Year, ~Desc, ~Note,
   "TBD", "miRNAs in canine mitral value disorders", "",
-  "TBD", "Increased levels of the synaptic proteins PSD-95, SNAP-25, and Neurogranin in the cerebrospinal fluid of patients with Alzheimer’s Disease", "",
   "TBD", "ContrApption: interactive visualization of RNA-Seq style datasets from a single function call","",
+) %>%
+  detailed_entries(Desc, glue::glue("{Year}"), Note)
+```
+
+
+
+# Volunteer Work & "Hacktivism"
+
+```{R}
+
+tribble(
+  ~Year, ~Desc, ~Note,
+  "2020-Present", "Volunteer at RagTag (https://ragtag.org/)",
+  "Core developer on The National Survivor Financial Security Policy Map and Scorecard 
+  (https://mapandscorecard.freefrom.org/), a tool for evaluating how different states in the US
+  promote the financial wellness of Survivors of intimate partner violence.",
+  "2008-2014", "Volunteer Firefighter/EMT: Orange Fire-Rescue-EMS", ""
 ) %>%
   detailed_entries(Desc, glue::glue("{Year}"), Note)
 ```
@@ -133,12 +169,7 @@ tribble(
 ```
 
 # Pre-academic work
-##
-##
-##
-##
-##
-##
+
 ## Antibody Technician - New England Peptide
 
                               (Now 'Vivitide') 
