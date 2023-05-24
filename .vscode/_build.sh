@@ -1,0 +1,1 @@
+R -e "rmarkdown::render('v-with-resume.qmd')"
