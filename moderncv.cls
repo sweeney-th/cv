@@ -327,12 +327,24 @@
 \newcommand*{\orcidsocialsymbol}   {}
 \newcommand*{\researchgatesocialsymbol}{}
 \newcommand*{\researcheridsocialsymbol}{}
+\newcommand*{\researchidsocialsymbol}{}
 \newcommand*{\googlescholarsocialsymbol}{\faGoogle~}
 \newcommand*{\telegramsocialsymbol}{}
 \newcommand*{\whatsappsocialsymbol}{}
 \newcommand*{\signalsocialsymbol}{}
 \newcommand*{\matrixsocialsymbol}{}
 \newcommand*{\bornsymbol}{}
+\newcommand{\mastodonsocialsymbol}{\faMastodon}
+\newcommand{\discordsocialsymbol}{\faDiscord}
+\newcommand{\twitchsocialsymbol}{\faTwich}
+\newcommand{\youtubesocialsymbol}{\faYoutube}
+\newcommand{\tiktoksocialsymbol}{\faTiktoksocialsymbol}
+\newcommand{\instagramsocialsymbol}{\faInstagramsocialsymbol}
+\newcommand{\soundcloudsocialsymbol}{\faSoundcloudsocialsymbol}
+\newcommand{\steamsocialsymbol}{\faSteamsocialsymbol}
+\newcommand{\xboxsocialsymbol}{\faxboxsocialsymbol}
+\newcommand{\playstationsocialsymbol}{\faPlaystationsocialsymbol}
+\newcommand{\battlenetsocialsymbol}{\faBattlenesocialsymbol}
 
 % other
 %------
